@@ -1,1 +1,6 @@
-print("hello!")
+motors = int(input("How many motors are carrying the packages? "))
+packages = int(input("How many kg of packages do we expect? "))
+if packages / motors <= 12:
+    print("Yes! The conveyor belt can carry the packages.")
+else:
+    print("No. The conveyor belt cannot carry the packages.")
